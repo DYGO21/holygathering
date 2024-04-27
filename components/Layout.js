@@ -109,7 +109,9 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/#home'}
 										onClick={() => setActive(!active)}
-										className="btnse text-xl"
+										className={`btnse text-xl ${
+											active ? '!text-amber-500' : ''
+										}`}
 									>
 										Home
 									</Link>
@@ -119,7 +121,9 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'events'}
 										onClick={() => setActive(!active)}
-										className="btnse text-xl"
+										className={`btnse text-xl ${
+											active ? '!text-amber-500' : ''
+										}`}
 									>
 										Events
 									</Link>
@@ -129,7 +133,9 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/gallery'}
 										onClick={() => setActive(!active)}
-										className="btnse  text-xl"
+										className={`btnse text-xl ${
+											active ? '!text-amber-500' : ''
+										}`}
 									>
 										Gallery
 									</Link>
@@ -139,7 +145,9 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/#contact'}
 										onClick={() => setActive(!active)}
-										className="btnse text-xl"
+										className={`btnse text-xl ${
+											active ? '!text-amber-500' : ''
+										}`}
 									>
 										Contact
 									</Link>
