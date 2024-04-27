@@ -5,7 +5,7 @@ export const BibleVerse = () => {
 	return (
 		<div className="text-center bg-yellow-100 text-amber-400 py-2 sm:p-3">
 			<h1 className="text-lg sm:text-2xl font-bold">
-				2023 THEME: <span className="uppercase">I am a Wonder</span>
+				2024 THEME: <span className="uppercase">I am a Wonder</span>
 			</h1>
 
 			<p className="italic text-[0.6rem] sm:text-xs flex items-center justify-center ">

@@ -56,8 +56,14 @@ export const Layout = ({ children, title }) => {
 
 			<div className="flex flex-col">
 				<header className="bg-yellow-700 text-white">
-					<nav className="flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 z-30">
-						<h2 className="sm:text-lg font-bold z-30">GLORIOUS HILL MINISTRIES</h2>
+					<nav
+						className={`flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 z-30 ${
+							active ? 'text-black' : ''
+						}`}
+					>
+						<h2 className="sm:text-lg font-bold z-30">
+							GLORIOUS HILL MINISTRIES
+						</h2>
 
 						<div className="hidden md:flex space-x-6 uppercase">
 							<Link href={'/#home'} className="btnse">
@@ -84,7 +90,7 @@ export const Layout = ({ children, title }) => {
 							{active && (
 								<TfiClose
 									onClick={() => setActive(!active)}
-									className="w-8 h-8"
+									className="w-5 h-5"
 								/>
 							)}
 						</div>
@@ -97,7 +103,7 @@ export const Layout = ({ children, title }) => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="fixed top-0 bottom-0 left-0 right-0 bg-yellow-700 pb-5 md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
+								className="fixed top-0 bottom-0 left-0 right-0 bg-yellow-100 pb-5 md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link
