@@ -55,11 +55,11 @@ const Gallery = () => {
 			<Layout>
 				<div className="h-[25vh] md:h-[30vh] text-white relative transition-all duration-300 ease-out">
 					<Image
-						src={'/assets/gallerybg.jpg'}
+						src={'/assets/gallery/women1.jpg'}
 						alt="Gallery Background"
 						width={2000}
 						height={2000}
-						className="w-full h-full object-cover"
+						className="w-full h-full object-cover object-top"
 						priority
 					/>
 
