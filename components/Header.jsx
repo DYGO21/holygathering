@@ -63,12 +63,12 @@ export const Header = () => {
 				<div className="bg-cyan-600/10">
 					<nav
 						className={`flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 z-30 ${
-							active ? 'bg-yellow-100 text-black' : ''
+							active ? 'bg-[#81BFCB] text-white' : ''
 						}`}
 					>
-						<h1 className="sm:text-lg font-bold z-30">
+						<Link href={'#home'} className="sm:text-lg font-bold z-30">
 							GLORIOUS HILL MINISTRIES
-						</h1>
+						</Link>
 
 						<div className="hidden md:flex space-x-6 uppercase">
 							<Link href={'#home'} className="navlinks">
@@ -121,13 +121,13 @@ export const Header = () => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="fixed top-8 bottom-0 right-0 left-0 bg-yellow-100  md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold z-20"
+								className="fixed top-8 bottom-0 right-0 left-0 bg-[#81BFCB] md:hidden flex flex-col space-y-5 uppercase items-center justify-center font-semibold z-20"
 							>
 								<motion.div variants={item}>
 									<Link
 										href={'#home'}
 										onClick={() => setActive(!active)}
-										className="btns text-xl"
+										className="btns !text-white text-2xl"
 									>
 										Home
 									</Link>
@@ -137,7 +137,7 @@ export const Header = () => {
 									<Link
 										href={'events'}
 										onClick={() => setActive(!active)}
-										className="btns text-xl"
+										className="btns !text-white text-2xl"
 									>
 										Events
 									</Link>
@@ -147,7 +147,7 @@ export const Header = () => {
 									<Link
 										href={'gallery'}
 										onClick={() => setActive(!active)}
-										className="btns text-xl"
+										className="btns !text-white text-2xl"
 									>
 										Gallery
 									</Link>
@@ -157,7 +157,7 @@ export const Header = () => {
 									<Link
 										href={'#contact'}
 										onClick={() => setActive(!active)}
-										className="btns text-xl"
+										className="btns !text-white text-2xl"
 									>
 										Contact
 									</Link>

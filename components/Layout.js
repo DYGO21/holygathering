@@ -58,12 +58,12 @@ export const Layout = ({ children, title }) => {
 				<header className="bg-yellow-700 text-white">
 					<nav
 						className={`flex justify-between items-center lg:max-w-5xl md:max-w-3xl mx-auto py-5 px-5 z-30 ${
-							active ? 'text-black' : ''
+							active ? 'text-white' : ''
 						}`}
 					>
-						<h2 className="sm:text-lg font-bold z-30">
+						<Link href={'/#home'} className="sm:text-lg font-bold z-30">
 							GLORIOUS HILL MINISTRIES
-						</h2>
+						</Link>
 
 						<div className="hidden md:flex space-x-6 uppercase">
 							<Link href={'/#home'} className="btnse">
@@ -103,15 +103,13 @@ export const Layout = ({ children, title }) => {
 								animate="visible"
 								variants={list}
 								ref={wrapperRef}
-								className="fixed top-0 bottom-0 left-0 right-0 bg-yellow-100 pb-5 md:hidden flex flex-col space-y-5 uppercase items-center justify-center z-20 font-semibold"
+								className="fixed top-0 bottom-0 left-0 right-0 bg-[#81BFCB] pb-5 md:hidden flex flex-col space-y-8 uppercase items-center justify-center z-20 font-semibold"
 							>
 								<motion.div variants={item}>
 									<Link
 										href={'/#home'}
 										onClick={() => setActive(!active)}
-										className={`btnse text-xl ${
-											active ? '!text-amber-500' : ''
-										}`}
+										className={`btnse !text-white text-2xl`}
 									>
 										Home
 									</Link>
@@ -121,9 +119,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'events'}
 										onClick={() => setActive(!active)}
-										className={`btnse text-xl ${
-											active ? '!text-amber-500' : ''
-										}`}
+										className={`btnse !text-white text-2xl`}
 									>
 										Events
 									</Link>
@@ -133,9 +129,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/gallery'}
 										onClick={() => setActive(!active)}
-										className={`btnse text-xl ${
-											active ? '!text-amber-500' : ''
-										}`}
+										className={`btnse !text-white text-2xl`}
 									>
 										Gallery
 									</Link>
@@ -145,9 +139,7 @@ export const Layout = ({ children, title }) => {
 									<Link
 										href={'/#contact'}
 										onClick={() => setActive(!active)}
-										className={`btnse text-xl ${
-											active ? '!text-amber-500' : ''
-										}`}
+										className={`btnse !text-white text-2xl`}
 									>
 										Contact
 									</Link>

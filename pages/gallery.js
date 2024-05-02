@@ -71,18 +71,18 @@ const Gallery = () => {
 				</div>
 
 				{imageInView.img && (
-					<div className="top-0 bottom-0 left-0 right-0 bg-black/90 fixed flex justify-center items-center overflow-hidden z-10">
+					<div className="top-0 bottom-0 left-0 right-0 bg-black/90 fixed flex justify-center items-center overflow-hidden z-50">
 						<TfiClose
-							className="absolute top-5 right-5 sm:top-10 sm:right-10 btns cursor-pointer w-10 h-10"
+							className="absolute top-5 right-5 sm:top-10 sm:right-10 btns cursor-pointer w-5 h-5 md:w-10 md:h-10"
 							onClick={() => imageAction()}
 						/>
 
 						<button
 							onClick={() => imageAction('previous-img')}
 							disabled={imageInView.i === 0}
-							className="z-20 arrows absolute left-0 md:left-10"
+							className="z-20 arrows absolute left-5 md:left-10"
 						>
-							<SlArrowLeft className="w-14 h-14" />
+							<SlArrowLeft className="w-7 h-7 md:w-14 md:h-14" />
 						</button>
 
 						<Image
@@ -91,15 +91,15 @@ const Gallery = () => {
 							height={1000}
 							alt={'Event'}
 							priority
-							className="w-auto max-w-[90%] max-h-[90%] z-10"
+							className="w-auto max-w-[80%] max-h-[80%] md:max-w-[90%] md:max-h-[90%] z-10"
 						/>
 
 						<button
 							onClick={() => imageAction('next-img')}
 							disabled={imageInView.i === images.length - 1}
-							className="z-20 arrows absolute right-0 md:right-10"
+							className="z-20 arrows absolute right-5 md:right-10"
 						>
-							<SlArrowRight className="w-14 h-14" />
+							<SlArrowRight className="w-7 h-7 md:w-14 md:h-14" />
 						</button>
 					</div>
 				)}
